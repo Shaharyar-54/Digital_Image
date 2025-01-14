@@ -261,3 +261,14 @@ cv2.destroyAllWindows()
 5)Use RANSAC to find the homography matrix that best relates the points in the two images.
 6)Use the homography matrix to warp one image to the perspective of the other.
 7)Display the warped image showing the alignment between the two views.
+# HAAR
+HAAR is a method used in object detection, especially with the Haar Cascade Classifier. It relies on Haar-like features (rectangular patterns that detect intensity differences in image regions) and uses a cascade of classifiers to quickly and efficiently detect objects like faces.
+Training: Requires labeled positive (object) and negative (non-object) samples.
+Advantages: Real-time performance, works for various objects.
+Limitations: Sensitive to lighting, outdated compared to modern deep learning techniques.
+Commonly used for face and object detection, it’s a fast but less accurate approach today.
+# FLANN (Fast Library for Approximate Nearest Neighbors)
+FLANN is an algorithm library in OpenCV designed for fast and efficient nearest-neighbor search in high-dimensional spaces. It is commonly used in feature matching, especially in computer vision tasks like object recognition and image stitching.
+Features: Efficient and fast for large datasets, supports various distance metrics.
+Advantages: Automatic algorithm selection, suitable for real-time applications.
+Limitations: Matches are approximate, not exact.
