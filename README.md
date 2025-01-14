@@ -71,16 +71,16 @@ Rotation-Invariance: The ability to detect features regardless of rotation.
 
 The SIFT (Scale-Invariant Feature Transform) algorithm consists of four main steps:
 
-# Scale-space Extrema Detection:
+# 1)Scale-space Extrema Detection:
 Detect keypoints at different scales using a Gaussian pyramid. This is achieved by applying the Difference of Gaussians (DoG) to find local maxima, which correspond to potential keypoints across different scales.
 
-# Keypoint Localization: 
+# 2)Keypoint Localization: 
 Refine the keypoint locations by eliminating low-contrast or edge-like keypoints using thresholds and the 2x2 Hessian matrix, resulting in accurate and strong interest points.
 
-# Orientation Assignment: 
+# 3)Orientation Assignment: 
 Assign an orientation to each keypoint based on the surrounding gradient magnitudes and directions, ensuring invariance to image rotation. The keypoint gets multiple orientations if peaks exist above a certain threshold in the histogram.
 
-# Keypoint Descriptor: 
+# 4)Keypoint Descriptor: 
 Create a 128-dimensional descriptor for each keypoint by dividing a 16x16 neighborhood into 16 sub-blocks and computing orientation histograms for each sub-block. This ensures robustness against illumination and rotation changes.
 # code
 gray = cv2.imread('box.png', cv2.IMREAD_GRAYSCALE)
