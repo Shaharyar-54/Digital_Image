@@ -266,6 +266,10 @@ HAAR is a method used in object detection, especially with the Haar Cascade Clas
 Training: Requires labeled positive (object) and negative (non-object) samples.
 Advantages: Real-time performance, works for various objects.
 Limitations: Sensitive to lighting, outdated compared to modern deep learning techniques.
+# FFT (Fast Fourier Transform)
+FFT is an algorithm to compute the Discrete Fourier Transform (DFT) efficiently. It transforms a signal from the time domain to the frequency domain, helping analyze its frequency components.
+Uses: Signal filtering, image processing, noise reduction, and frequency analysis.
+OpenCV: Use cv2.dft() or numpy.fft.fft() for implementation.
 Commonly used for face and object detection, it’s a fast but less accurate approach today.
 # FLANN (Fast Library for Approximate Nearest Neighbors)
 FLANN is an algorithm library in OpenCV designed for fast and efficient nearest-neighbor search in high-dimensional spaces. It is commonly used in feature matching, especially in computer vision tasks like object recognition and image stitching.
